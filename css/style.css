@@ -1,0 +1,21 @@
+body {
+  background-color: #101010;
+}
+
+#principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.whitesmoke {
+  color: whitesmoke;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
