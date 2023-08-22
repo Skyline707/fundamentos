@@ -21,16 +21,88 @@ for (var num = 50; num >= 1; num--) {
 
 }*/
 
+// function listarPerroPajaro(num, animal)
 
-var num = 6;
-const constante = 'hola';
+//   // const constante = 'hola';
+  
+//   // var palabra = 'patri';
+  
+//   // var animales = ['perro', 'gato', 'pajaro'];
+  
+//   // for (var i = 0; i < animales.length; i++){
+//   //   if(animales[i][0] == 'p') {
+//   //      console.log(animales[i]);
+//   //   }
+//   // }
+//   return animales[i];
+// }
 
-var palabra = 'patri';
 
-var animales = ['perro', 'gato', 'pajaro'];
+// function sumar(num1, num2) {
+//   return num1 + num2;
+// }
 
-for (var i = 0; i < animales.length; i++){
-  if(animales[i][0] == 'p') {
-     console.log(animales[i]);
+// function sumar(num1, num2) {
+//   resultado = num1 + num2;
+
+//   return resultado;
+// }
+
+// resultado = sumar(5, 3);
+
+// console.log(resultado);
+
+
+// function alreves(nombre){
+//   var tamano = nombre.length - 1;
+//   var res = "";
+
+//   while(tamano >= 0) {
+//     res += nombre[tamano];
+//     tamano--;
+//   }
+//   return res;
+// }
+
+// var resultado = alreves("polloshermanos")
+
+// console.log(resultado)
+
+
+// function alreves(nombre){
+//   var tamano=nombre.length -1;
+//   var res="";
+//   while(tamano >=0){
+//     res += nombre[tamano];
+//     tamano--;
+//   }
+
+//   return res; 
+// }
+
+// var resultado=alreves("Heisenberg");
+// console.log(resultado);
+
+
+
+function paresalreves(num1, num2){
+  var res = "";
+  while(num1 <= num2){
+    if(num1 % 2 == 0){
+      res += num1 + ", ";
+    }
+    num1++;
   }
-}
+
+  var ultposicion = res.length -1;
+  var resu = "";
+  while(ultposicion >= 0){
+    resu += res[ultposicion];
+    ultposicion--
+  }
+
+  return resu
+} 
+
+var resultado = paresalreves(5, 20);
+console.log(resultado);
