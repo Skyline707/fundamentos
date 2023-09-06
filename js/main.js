@@ -85,24 +85,44 @@ for (var num = 50; num >= 1; num--) {
 
 
 
-function paresalreves(num1, num2){
-  var res = "";
-  while(num1 <= num2){
-    if(num1 % 2 == 0){
-      res += num1 + ", ";
+// function paresalreves(num1, num2){
+//   var res = "";
+//   while(num1 <= num2){
+//     if(num1 % 2 == 0){
+//       res += num1 + ", ";
+//     }
+//     num1++;
+//   }
+
+//   var ultposicion = res.length -1;
+//   var resu = "";
+//   while(ultposicion >= 0){
+//     resu += res[ultposicion];
+//     ultposicion--
+//   }
+
+//   return resu
+// } 
+
+// var resultado = paresalreves(5, 20);
+// console.log(resultado);
+
+
+
+function ordenar(){
+  var animes = ["Death note", "Naruto", "Overlord", "Boku no hero", "Gantz"];
+
+  for(var i = 0; i <= animes.length-2; i++){
+    for(var j = 0; j <= animes.length-2; j++){
+      if(animes[j][0] > animes[j+1][0]){
+        var aux = animes[j]
+        animes[j] = animes[j+1]
+        animes[j+1] = aux;
+      }
     }
-    num1++;
   }
 
-  var ultposicion = res.length -1;
-  var resu = "";
-  while(ultposicion >= 0){
-    resu += res[ultposicion];
-    ultposicion--
-  }
-
-  return resu
-} 
-
-var resultado = paresalreves(5, 20);
-console.log(resultado);
+  return animes;
+}
+var res = ordenar();
+console.log(res)
